@@ -36,6 +36,7 @@ def upload(request):
                 fields = line.split(",")
                 data_dict = {"Song": fields[0], "Date": fields[1], "Number of Plays": fields[2]}
                 load_files.append(data_dict)
+
             # here is called the function from the module created
             c = CsvProcessing()
             c.read_csv(payload_files_test=load_files)
