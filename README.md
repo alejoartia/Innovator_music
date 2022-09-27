@@ -35,11 +35,13 @@ and its possible to upload multiples files at the same time
 
 ## CSV processing module explanation
 
+This module is in https://github.com/alejoartia/Innovator_music/blob/master/CsvProcessing/csvprocessing.py 
+Here its recived a dict (payload) from the original file and then processed to return last_payload_files
 
 <pre>
 		```
 		
-		class CsvProcessing:
+    class CsvProcessing:
 
     def __init__(self):
         self.payload_files = []
